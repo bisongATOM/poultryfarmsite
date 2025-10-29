@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KukuTamu Poultry Farm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to KukuTamu Poultry Farm</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Our Chickens</a>
+    <a href="#order">Order Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      At KukuTamu Poultry Farm, we are passionate about raising healthy chickens and promoting sustainable farming practices. 
+      Our mission is to provide fresh, organic, and high-quality poultry products to our community while showcasing our farming journey.
+    </p>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Our Chickens</h2>
+    <div class="products-grid">
+      <div class="card">
+        <img src="broilers.jpg" alt="Broilers" width="300" height="400">
+        <h3>Broilers</h3>
+        <p>Fast-growing meat chickens raised with care for tender and delicious poultry meat.</p>
+      </div>
+      <div class="card">
+        <img src="layers.jpg" alt="Layers" width="300" height="400">
+        <h3>Layers</h3>
+        <p>Healthy layers producing fresh organic eggs daily to meet your household and business needs.</p>
+      </div>
+      <div class="card">
+        <img src="free-range.jpg" alt="Free-Range" width="300" height="400">
+        <h3>Free-Range</h3>
+        <p>Chickens raised in open fields for natural growth and unmatched flavor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section class="order" id="order">
+    <h2>Place an Order</h2>
+    <form action="mailto:mwanyagetingepoultryfarm@example.com" method="post" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+254..." required>
+
+      <label for="chicken-type">Chicken Type</label>
+      <select id="chicken-type" name="chicken-type" required>
+        <option value="Broilers">Broilers</option>
+        <option value="Layers">Layers</option>
+        <option value="Free-Range">Free-Range</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" placeholder="Enter number of chickens" required>
+
+      <label for="message">Additional Notes</label>
+      <textarea id="message" name="message" rows="4" placeholder="Special requests..."></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">📍 Location: Utawala, Kenya</p>
+    <p style="text-align:center;">📞 Phone: +254 793 745 480</p>
+    <p style="text-align:center;">📧 Email: mwanyagetingepoultryfarm@example.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KukuTamu Poultry Farm. All rights reserved.</p>
+  </footer>
+</body>
+</html>
